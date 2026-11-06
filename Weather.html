@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore weather forecasts, weather conditions, temperature, climate information, and useful weather tips.">
+<title>Weather - Complete Weather Guide</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f5ff;
+    color: #26334a;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(135deg, #087cf0, #42c5e8);
+    color: white;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+h2 {
+    color: #087cf0;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #e6f3ff, #f1faff);
+    padding: 23px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.weather-card span {
+    font-size: 38px;
+}
+
+.weather-card h3 {
+    margin: 10px 0;
+    color: #087cf0;
+}
+
+.promo {
+    background: linear-gradient(135deg, #0756bd, #12a9df);
+    color: white;
+    text-align: center;
+    padding: 45px 25px;
+    border-radius: 18px;
+    margin: 30px 0;
+}
+
+.promo h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.promo p {
+    margin: 15px auto 25px;
+    max-width: 650px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: white;
+    color: #087cf0;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #e5f3ff;
+    transform: translateY(-3px);
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    header {
+        padding: 45px 15px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .promo h2 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="weather-icon">🌤️</div>
+    <h1>Weather Guide</h1>
+    <p>Understand the Weather, Explore the Climate, Plan Your Day</p>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>🌍 What Is Weather?</h2>
+    <p>
+        Weather describes the condition of the atmosphere at a particular
+        place and time. It includes temperature, rainfall, humidity,
+        wind speed, cloud cover, and atmospheric pressure.
+    </p>
+    <p>
+        Weather affects our everyday lives, from choosing what clothes
+        to wear to planning outdoor activities, farming, and travelling.
+        Understanding weather helps us prepare for changing conditions.
+    </p>
+</section>
+
+<section>
+    <h2>☀️ Different Types of Weather</h2>
+    <p>Weather can change throughout the day and across different seasons.
+    Here are some common weather conditions:</p>
+
+    <div class="weather-grid">
+        <div class="weather-card">
+            <span>☀️</span>
+            <h3>Sunny</h3>
+            <p>Clear skies with plenty of sunshine and warmth.</p>
+        </div>
+
+        <div class="weather-card">
+            <span>🌧️</span>
+            <h3>Rainy</h3>
+            <p>Rainfall occurs when water droplets fall from clouds.</p>
+        </div>
+
+        <div class="weather-card">
+            <span>⛈️</span>
+            <h3>Stormy</h3>
+            <p>Thunderstorms can bring lightning, heavy rain, and strong winds.</p>
+        </div>
+
+        <div class="weather-card">
+            <span>❄️</span>
+            <h3>Snowy</h3>
+            <p>Snow forms when temperatures are cold enough for ice crystals.</p>
+        </div>
+
+        <div class="weather-card">
+            <span>🌫️</span>
+            <h3>Foggy</h3>
+            <p>Fog reduces visibility by creating tiny water droplets in the air.</p>
+        </div>
+
+        <div class="weather-card">
+            <span>🌬️</span>
+            <h3>Windy</h3>
+            <p>Moving air can influence temperature and weather conditions.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>🌡️ Important Weather Elements</h2>
+    <p><b>Temperature:</b> Measures how hot or cold the atmosphere is.</p>
+    <p><b>Humidity:</b> Describes the amount of water vapour in the air.</p>
+    <p><b>Wind Speed:</b> Measures how quickly air moves.</p>
+    <p><b>Rainfall:</b> Measures the amount of rain received in an area.</p>
+    <p><b>Air Pressure:</b> The force exerted by the atmosphere.</p>
+    <p><b>Cloud Cover:</b> Describes how much of the sky is covered by clouds.</p>
+</section>
+
+<section>
+    <h2>🌱 Why Is Weather Important?</h2>
+    <p>
+        Weather plays an important role in agriculture, transportation,
+        tourism, health, and daily activities. Farmers use weather
+        forecasts to plan irrigation, planting, and harvesting.
+    </p>
+    <p>
+        Weather forecasts also help people prepare for extreme conditions
+        such as heatwaves, floods, storms, and heavy rainfall.
+    </p>
+</section>
+
+<section>
+    <h2>📱 Benefits of Checking Weather Forecasts</h2>
+    <ul>
+        <li>Plan your daily activities more effectively.</li>
+        <li>Prepare for rain, storms, and extreme temperatures.</li>
+        <li>Make better decisions about farming and irrigation.</li>
+        <li>Travel more safely with weather information.</li>
+        <li>Stay informed about changing weather conditions.</li>
+    </ul>
+</section>
+
+<div class="promo">
+    <h2>🚀 Discover More Useful Tools & Software</h2>
+    <p>
+        Looking for useful applications, software, and digital resources?
+        Visit our website to explore more helpful tools and downloads.
+    </p>
+    <a href="https://gitapp.download/" target="_blank"
+       rel="noopener noreferrer" class="download-btn">
+       Explore & Download Now →
+    </a>
+</div>
+
+<section>
+    <h2>🌈 Final Thoughts</h2>
+    <p>
+        Weather is an essential part of our natural environment.
+        Understanding different weather conditions helps us make
+        smarter decisions, protect ourselves, and enjoy everyday life.
+    </p>
+    <p>
+        Stay informed, check forecasts regularly, and always be prepared
+        for changing weather conditions.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Weather Guide. All Rights Reserved.</p>
+    <p>Explore More at GitApp Download</p>
+</footer>
+
+</body>
+</html>
